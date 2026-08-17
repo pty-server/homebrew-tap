@@ -7,9 +7,13 @@ cask "choux@rc" do
   desc "Release candidate builds of the native desktop client for ptys"
   homepage "https://github.com/pty-server/choux"
 
+  livecheck do
+    skip "Prerelease channel; version is bumped by the choux release workflow"
+  end
+
   conflicts_with cask: "pty-server/tap/choux"
   depends_on arch: :arm64
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "choux.app"
 
