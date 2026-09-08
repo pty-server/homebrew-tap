@@ -1,6 +1,6 @@
 cask "choux" do
-  version "0.2.1"
-  sha256 "9f1ae5a08e5693b461312f7ef2700143819a7276069bdefdceed2f5607c585af"
+  version "0.2.2"
+  sha256 "44cc3da8e2f64d323bb13bdfaedbe15dfd3b015017daea5e276ab9a352da1a9e"
 
   url "https://github.com/pty-server/choux/releases/download/v#{version}/choux_#{version}_aarch64.dmg"
   name "choux"
